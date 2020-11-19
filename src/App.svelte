@@ -2,17 +2,21 @@
 	export let name;
 </script>
 
-<main>
+<main class="test">
 	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	<p class="test-p">Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
 </main>
 
-<style>
-	main {
+<style type="text/scss">
+	.test {
 		text-align: center;
 		padding: 1em;
-		max-width: 240px;
 		margin: 0 auto;
+
+		&-p {
+			width: 240px;
+			margin: auto;
+		}
 	}
 
 	h1 {
